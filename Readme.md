@@ -90,6 +90,18 @@ https_proxy=<proxy address> pyenv install 3.10.9
 pyenv global 3.10.9
 ```
 
+Proxyがある場合、`pip install`が通らないのでそれ用の設定をする必要がある。<br>
+`--proxy`オプションでもよいが、毎度やるのは面倒なため。<br>
+具体的には、~/.config/pip/pip.confにvimなどで以下を書き加える。
+
+```
+[global]
+proxy = <proxy address>
+```
+
+このやり方で`pip install`はできるようになるものの、`poetry install`は通らない。<br>
+`poetry install`ができるようなProxy設定は検討中。
+
 
 ## Poetry
 詳細な使い方は[リポジトリ](https://github.com/python-poetry/poetry)を参照のこと。
