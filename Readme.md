@@ -95,7 +95,7 @@ pyenv global 3.10.9
 詳細な使い方は[リポジトリ](https://github.com/python-poetry/poetry)を参照のこと。
 
 ```sh
-curl -sSL https://install.python-poetry.org -x http:/webprx1.nikkoam.com:80 | https_proxy=http://webprx1.nikkoam.com:80 python -
+curl -sSL https://install.python-poetry.org -x <proxy address> | https_proxy=<proxy address> python -
 poetry config virtualenvs.in-project true
 ```
 
