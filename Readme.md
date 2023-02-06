@@ -4,7 +4,7 @@
 ```sh
 ssh msuzuki@10.1.1.1
 ```
-基本はssh <username>@<ip address>の形。
+基本は`ssh <username>@<ip address>`の形。
 
 毎度打つのが面倒であれば、`U:\users\a12345\.ssh\config`に定義しておくと便利。
 
